@@ -1097,6 +1097,11 @@ p:last-child {
   display: flex;
   justify-content: center;
 }
+
+.form-label-text-checkbox{
+  color:var(--bg-form-cl);
+}
+
 .form-link-text {
   color: var(--main-bg-cl);
   text-decoration-line: underline;
@@ -1147,7 +1152,7 @@ p:last-child {
   height: 120px;
   resize: none;
   border-radius: 4px;
-  
+
 }
 .form-input.comment::placeholder {
   text-align: top;
