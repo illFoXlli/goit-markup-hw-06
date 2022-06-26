@@ -716,37 +716,36 @@ p:last-child {
 }
 /* форма в футоре */
 
-
-
 .footer-form {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
 .footer-mailing {
-    margin-left: 93px;
+  margin-left: 93px;
   margin-top: 12px;
+}
 
-   
+.footer-mailing-input:focus-visible {
+  outline: var(--main-bg-cl) auto 1px;
 }
 
 .footer-mailing-input {
- width: 328px;
- padding: 15px 16px;
- background-color: inherit;
- border-radius: 4px;
- border: 1px solid #6E6E75;
-  
+  width: 328px;
+  padding: 15px 16px;
+  background-color: inherit;
+  border-radius: 4px;
+  border: 1px solid #6e6e75;
 
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
 
-color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.5);
 
+  transition-property: outline;
+  transition-duration: var(--time-hov-foc);
+  transition-timing-function: var(--time-cubic);
 }
 
 .footer-maling-button {
@@ -759,8 +758,7 @@ color: rgba(117, 117, 117, 0.5);
 .footer-maling-svg {
   margin-left: 10px;
   fill: #ffffff;
-  }
-
+}
 
 /* -----------------------------------Партфоле --------------------------------- */
 
