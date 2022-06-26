@@ -722,7 +722,7 @@ p:last-child {
   align-items: center;
 }
 .footer-mailing {
-  margin-left: 93px;
+  margin-left: auto;
   margin-top: 12px;
 }
 
@@ -731,21 +731,26 @@ p:last-child {
 }
 
 .footer-mailing-input {
-  width: 328px;
+  width: 358px;
   padding: 15px 16px;
   background-color: inherit;
   border-radius: 4px;
   border: 1px solid #6e6e75;
+ color: #ffffff;
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  
 
   transition-property: outline;
   transition-duration: var(--time-hov-foc);
   transition-timing-function: var(--time-cubic);
+}
+
+.footer-mailing-input::placeholder {
+  color:#ACACB0;
 }
 
 .footer-maling-button {
@@ -938,6 +943,8 @@ p:last-child {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+  height: 581px;
 
   display: block;
 
@@ -971,10 +978,12 @@ p:last-child {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .modal-icon-close-svg {
-  --color1: rgba(0, 0, 0, 0.1);
+  --color1: #ffffff;
   --color2: rgba(0, 0, 0, 0.1);
   --color3: #212121;
 
@@ -1006,8 +1015,7 @@ p:last-child {
 
 .form {
   /* outline: 1px solid tomato; */
-  width: 448px;
-  min-height: 501px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -1020,7 +1028,7 @@ p:last-child {
 
   letter-spacing: 0.01em;
 
-  color: var(----bg-form-cl);
+  color: var(--bg-form-cl);
 }
 
 .form-label-checkbox {
@@ -1031,6 +1039,8 @@ p:last-child {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
 
 .form-checkbox {
   opacity: 1;
@@ -1110,6 +1120,10 @@ p:last-child {
   /* outline: 1px solid blue; */
   margin-top: 4px;
   padding: 12px 12px 12px 42px;
+  border: 1px solid var(--bg-form-cl);
+  border-radius: 4px;
+
+      
 
   transition-property: outline;
   transition-duration: var(--time-hov-foc);
@@ -1130,6 +1144,13 @@ p:last-child {
 
 .form-input.comment {
   padding: 12px;
+  height: 120px;
+  resize: none;
+  border-radius: 4px;
+  
+}
+.form-input.comment::placeholder {
+  text-align: top;
 }
 
 .form-grup:not(:last-child) {
