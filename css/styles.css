@@ -41,7 +41,7 @@
   --bg-cards-information-box: rgba(33, 150, 243, 0.9);
 
   --time-cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-hov-foc: 1000ms;
+  --time-hov-foc: 250ms;
   --outline-foc: none;
 
   --items: 3;
@@ -666,7 +666,8 @@ p:last-child {
   margin-bottom: 20px;
 }
 
-.footer-social-text {
+.footer-social-text,
+.footer-mailing-taxt {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -713,6 +714,53 @@ p:last-child {
   background: var(--main-bg-cl);
   outline: var(--outline-foc);
 }
+/* форма в футоре */
+
+
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.footer-mailing {
+    margin-left: 93px;
+  margin-top: 12px;
+
+   
+}
+
+.footer-mailing-input {
+ width: 328px;
+ padding: 15px 16px;
+ background-color: inherit;
+ border-radius: 4px;
+ border: 1px solid #6E6E75;
+  
+
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+
+}
+
+.footer-maling-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+}
+.footer-maling-svg {
+  margin-left: 10px;
+  fill: #ffffff;
+  }
+
 
 /* -----------------------------------Партфоле --------------------------------- */
 
@@ -911,6 +959,7 @@ p:last-child {
   position: absolute;
   top: 0;
   right: 0;
+  transform: translate(-8px, 8px);
 
   display: flex;
   justify-content: center;
@@ -1022,7 +1071,6 @@ p:last-child {
   --color1: var(--bg-checkbox-icon-white);
   --color2: var(--bg-checkbox-icon-white);
   --color3: var(--bg-checkbox-icon-black);
-
 }
 
 .checkbox-icon:focus {
