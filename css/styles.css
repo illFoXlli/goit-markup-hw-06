@@ -39,10 +39,13 @@
   --logo-cl-secondary: #2196f3;
   --cl-border: #ececec;
   --bg-cards-information-box: rgba(33, 150, 243, 0.9);
+  --input-border-cl: 
+#D3D3D3;
 
   --time-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --time-hov-foc: 250ms;
   --outline-foc: none;
+
 
   --items: 3;
   --indent: 30px;
@@ -736,13 +739,11 @@ p:last-child {
   background-color: inherit;
   border-radius: 4px;
   border: 1px solid #6e6e75;
- color: #ffffff;
+  color: #ffffff;
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-
-  
 
   transition-property: outline;
   transition-duration: var(--time-hov-foc);
@@ -750,7 +751,7 @@ p:last-child {
 }
 
 .footer-mailing-input::placeholder {
-  color:#ACACB0;
+  color: #acacb0;
 }
 
 .footer-maling-button {
@@ -943,7 +944,7 @@ p:last-child {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+  width: 528px;
   height: 581px;
 
   display: block;
@@ -1038,11 +1039,7 @@ p:last-child {
 
   margin-top: 20px;
   margin-bottom: 30px;
-
-  
 }
-
-
 
 .form-checkbox {
   opacity: 1;
@@ -1100,8 +1097,8 @@ p:last-child {
   justify-content: center;
 }
 
-.form-label-text-checkbox{
-  color:var(--bg-form-cl);
+.form-label-text-checkbox {
+  color: var(--bg-form-cl);
 }
 
 .form-link-text {
@@ -1127,10 +1124,8 @@ p:last-child {
   /* outline: 1px solid blue; */
   margin-top: 4px;
   padding: 12px 12px 12px 42px;
-  border: 1px solid var(--bg-form-cl);
+  border: 1px solid var(--input-border-cl);
   border-radius: 4px;
-
-      
 
   transition-property: outline;
   transition-duration: var(--time-hov-foc);
@@ -1154,7 +1149,6 @@ p:last-child {
   height: 120px;
   resize: none;
   border-radius: 4px;
-
 }
 .form-input.comment::placeholder {
   text-align: top;
