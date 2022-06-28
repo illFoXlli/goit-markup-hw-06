@@ -884,7 +884,7 @@ p:last-child {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0, 294px);
+  transform: translate(0, 100%);
 
   font-weight: 400;
   font-size: 18px;
@@ -1089,6 +1089,10 @@ p:last-child {
 .checkbox-icon-button:checked ~ .form-taxt-checkbox > .checkbox-icon {
   --color1: var(--bg-checkbox-icon-blue);
   --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-blue);
+}
+
+.checkbox-icon-button:focus ~ .form-taxt-checkbox > .checkbox-icon {
   --color3: var(--bg-checkbox-icon-blue);
 }
 
